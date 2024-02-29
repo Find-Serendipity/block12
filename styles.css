@@ -1,15 +1,57 @@
+:root {
+    --birdy: #FBF4DB;
+    --nesty: #351A00;
+    --flighty: #938655;
+    --wingy: #674628;
+    --black: #000000;
+  }
+
+::selection {
+    background-color: var(--birdy);
+    color: var(--nesty);
+}
+
+html {
+    font-size: 62.5%;
+}
+
 body {
-    background-color:antiquewhite; 
+    font-size: 1.75rem;
+    line-height: 1.5;
+    color: var(--nesty);
+    background-color: var(--birdy);
     background-image: url("https://cdn.discordapp.com/attachments/1016425495564398685/1212115393620086896/output-onlinepngtools.png?ex=65f0a96d&is=65de346d&hm=788e50216e2024ba6e17bd4b76ae44128a5f82310f40191c37f8ef8ab75bcda2&");
     background-repeat: repeat;
     background-size: contain;
     list-style-position: inside;
 }
 
-nav {
-    text-align: center;
-    font-family: monospace;
+header {
+    position: relative;
 }
+
+nav {
+    font-family: monospace;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.625rem;
+  color: var(--black);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
 
 .footer {
     text-align: center;
@@ -22,13 +64,12 @@ nav {
 }
 
 .nav {
-    color: rgb(53, 26, 0);;
+    color: var(--nesty);
     font-size: x-large;
-    text-align: center;
     text-decoration: none;
     text-shadow: #FFF 2px 0 20px;
     font-weight: 800;
-    border: 2px dotted rgb(53, 26, 0);;
+    border: 2px dotted var(--nesty);
     border-radius: 150px;
     padding:2px;
 }
@@ -52,7 +93,11 @@ nav {
 }
 
 .mainimg:hover {
-    opacity: .01;
+        opacity: 0.1;
+        transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -webkit-transition: opacity 1s ease-in-out;
+      }
 }
 
 .text {
@@ -135,5 +180,27 @@ nav {
 
 #selfie {
     border-radius: 500px;
-    border: 3px dotted rgb(53, 26, 0);
+    border: 3px dotted var(--nesty);
 }
+
+@media screen and (min-width: 768px) {
+    .card-column {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  
+    .card-column:last-child {
+      flex-grow: 1;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    header {
+      width: 75%;
+    }
+  
+    .card-column {
+      flex: 0 0 33.333%;
+      max-width: 33.333%;
+    }
+  }
