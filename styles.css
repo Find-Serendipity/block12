@@ -1,3 +1,4 @@
+/* Document colors */
 :root {
     --birdy: #FBF4DB;
     --nesty: #351A00;
@@ -6,8 +7,9 @@
     --black: #000000;
   }
 
+  /* Document colors */
 ::selection {
-    background-color: var(--birdy);
+    background-color: var(--flighty);
     color: var(--nesty);
 }
 
@@ -26,18 +28,20 @@ body {
     list-style-position: inside;
 }
 
-header {
-    position: relative;
+main {
+    width: 90%;
+    margin: 2rem auto;
 }
 
 nav {
     font-family: monospace;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-items: center;
     text-align: center;
     margin: 0 auto;
+    margin-inline: 1rem;
+    nav-right: auto;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
 }
 
 h1,
@@ -56,7 +60,7 @@ h6 {
 .footer {
     text-align: center;
     font-size: x-small;
-    color:rgb(53, 26, 0);
+    color: var(--nesty);
     text-shadow: #FFF 2px 0 20px;
     font-family: monospace;
     font-weight: 800;
@@ -80,6 +84,14 @@ h6 {
     font-weight: 500;
 }
 
+.homebutton {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    margin: 0 auto;
+}
+
 .invisible {
     color:transparent;
     font-size: x-small;
@@ -98,7 +110,6 @@ h6 {
         -moz-transition: opacity 1s ease-in-out;
         -webkit-transition: opacity 1s ease-in-out;
       }
-}
 
 .text {
     font-family: monospace;
@@ -113,6 +124,8 @@ h6 {
 
 .maintext {
     font-size: xx-large;
+    border-radius: 100%;
+    box-shadow:  .3rem .3rem 1rem var(--wingy), .3rem .3rem 1rem var(--black);
 }
 
 .aboutcontainer {
@@ -165,12 +178,12 @@ h6 {
 
 #thump {
     position: absolute;
-    top: 30%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0 auto;
     padding: 0 auto;
-    font-size: x-large;
+    font-size: large;
 }
 
 #musicplayer {
@@ -183,24 +196,30 @@ h6 {
     border: 3px dotted var(--nesty);
 }
 
-@media screen and (min-width: 768px) {
-    .card-column {
+/* @media screen and (min-width: 768px) {
+    
+    .mainimg {
       flex: 0 0 50%;
       max-width: 50%;
     }
   
-    .card-column:last-child {
-      flex-grow: 1;
-    }
   }
   
   @media screen and (min-width: 992px) {
     header {
-      width: 75%;
+        width: 85%;
     }
-  
-    .card-column {
+    
+    .mainimg {
       flex: 0 0 33.333%;
       max-width: 33.333%;
     }
   }
+
+  @media screen and (min-width: 1320px) {
+    
+    .mainimg {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }*/
