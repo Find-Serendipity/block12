@@ -20,17 +20,16 @@ If you would like to contact me about this work, please reach out to find.serend
 
 ### index
 
-class="nav invisible text mainimg maintext footer"
+class="nav invisible mainimg text main maintext footer"
 id="birdiehover thump"
 
 ### about
 
 class="nav invisible aboutcontainer text maintext paragraph footer"
-id="selfie" 
 
 ### contact
 
-class="nav invisible text main text contactheader footer"
+class="nav invisible text main footer"
 id="contactform formform firstname lastname email message agreeterms receiveemails sendemail"
 
 ### listen
@@ -40,7 +39,13 @@ id="musicplayer"
 
 ### portfolio
 
-class="nav invisible projectcontainer text projectpad img projectheader list footer"
+class="nav invisible projectcontainer text projectpad projectimg projectheader list footer"
 
 ### terms
+
+class="nav invisible terms termsheader termsbody nav homebutton footer"
+
+### thanks
+
+class="nav invisible thanks thankyou thanksbody nav homebutton footer"
 

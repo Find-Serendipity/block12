@@ -1,4 +1,4 @@
-/* Document colors */
+/* Basic colors */
 :root {
     --birdy: #FBF4DB;
     --nesty: #351A00;
@@ -7,16 +7,18 @@
     --black: #000000;
   }
 
-  /* Document colors */
+  /* Text Highlight colors */
 ::selection {
     background-color: var(--flighty);
     color: var(--nesty);
 }
 
+/* Resizing the rem to 10px */
 html {
     font-size: 62.5%;
 }
 
+/* Setting basic font size/colors for whole document*/
 body {
     font-size: 1.75rem;
     line-height: 1.5;
@@ -28,11 +30,13 @@ body {
     list-style-position: inside;
 }
 
+/* Adding a buffer around the main */
 main {
     width: 90%;
     margin: 2rem auto;
 }
 
+/* Setting font rules and spacing for nav elements */
 nav {
     font-family: monospace;
     text-align: center;
@@ -44,6 +48,7 @@ nav {
     width: 100%; 
 }
 
+/* Setting spacing rules for header elements */
 h1,
 h2,
 h3,
@@ -56,43 +61,51 @@ h6 {
   line-height: 1.1;
 }
 
+/* Specifying rules for all anchor elements */
+a {
+    text-decoration: none;
+    color: var(--nesty)
+}
 
+/* Setting font rules and spacing for footer elements */
 .footer {
     color: var(--nesty);
     text-align: center;
     font-size: x-small;
-    text-decoration: none;
     text-shadow: #FFF 2px 0 20px;
     font-family: monospace;
     font-weight: 800;
-    margin-top: 20px;
+    margin-top: 2rem;
 }
 
+/* Adding additional rules for items classed as nav */
 .nav {
     color: var(--nesty);
     font-size: x-large;
-    text-decoration: none;
-    text-shadow: #FFF 2px 0 20px;
+    text-shadow: #FFF 2px 0 2rem;
     font-weight: 800;
     border: 2px dotted var(--nesty);
-    border-radius: 150px;
+    border-radius: 15rem;
     padding:2px;
 }
 
+/* Specifying rules hovering over the nav */
 .nav:hover {
     background-color: rgba(251, 244, 219, 0.8);
     border: dashed;
     font-weight: 500;
 }
 
+/* Specifying rules for solo home nav buttons */
 .homebutton {
-    text-align: center;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     width: 25%;
     margin: 0 auto;
 }
 
+/* Makes H1 visible to computers and readers but invisible to people */
 .invisible {
     color:transparent;
     font-size: x-small;
@@ -105,8 +118,9 @@ h6 {
     text-align: center;
 }
 
+/* Specifying what happens on hover for main image */
 .mainimg:hover {
-        opacity: 0.1;
+        opacity: 0.01;
         transition: opacity 1s ease-in-out;
         -moz-transition: opacity 1s ease-in-out;
         -webkit-transition: opacity 1s ease-in-out;
@@ -122,18 +136,13 @@ h6 {
     margin: 0 auto;
 }
 
-.maintext {
+.main {
     font-size: xx-large;
+}
+
+.maintext {
     border-radius: 100%;
     box-shadow:  .3rem .3rem 1rem var(--wingy), .3rem .3rem 1rem var(--black);
-}
-
-.aboutcontainer {
-    text-align: center;
-}
-
-.projectcontainer {
-    text-align: center;
 }
 
 .paragraph {
@@ -142,28 +151,40 @@ h6 {
     flex-wrap: wrap;
     justify-content: center;
     text-align: justify;
-    width: 700px;
+    width: 75%;
     margin: 0 auto;
+    color: var(--nesty);
+    position: relative;
+    background-color: rgba(187, 155, 96, 0.502);
+    border: 1px dashed var(--black);
+    border-radius: 2rem;
 }
 
 .img {
+    border-radius: 100%;
+    box-shadow: 0 0 2rem var(--black);
+    width: 50%;
+}
+
+.imgbox {
+    margin: 0 auto;
     text-align: center;
-    border-radius: 400px;
-    box-shadow: 0 0 20px black;
 }
 
 .projectcontainer {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: justify;
-    margin: 0 auto;
+}
+
+.projectimg {
+    border-radius: 100%;
+    box-shadow: 0 0 2rem var(--black);
 }
 
 .projectheader {
-    padding-inline-start: 25%;
-    text-decoration: underline;
+    background: -webkit-linear-gradient(#a0a00a, #954f00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .projectpad {
@@ -171,19 +192,45 @@ h6 {
 }
 
 .list {
-    display: flex;
-    flex-wrap: wrap;
-    width: 250px;
+    text-align: left;
+    width: 75%;
+    border: 2px dashed var(--black);
+    border-radius: 5%;
+    transition: all 0.5s ease-in-out;
+    background-image: linear-gradient(
+    rgba(249, 249, 37, 0.3) 0%,
+    rgba(192, 74, 0, 0.664) 100%
+  );
 }
 
-#thump {
-    position: absolute;
-    top: 35%;
-    left: 50%;
+#thump1 {
+    position: relative;
+    top: 50%;
+    left: 20%;
     transform: translate(-50%, -50%);
     margin: 0 auto;
     padding: 0 auto;
-    font-size: large;
+    font-size: x-large;
+    opacity: .05;
+}
+
+#thump1:hover {
+    opacity: 100%;
+}
+
+#thump2 {
+    position: relative;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    padding: 0 auto;
+    font-size: x-large;
+    opacity: .05;
+}
+
+#thump2:hover {
+    opacity: 100%;
 }
 
 #musicplayer {
@@ -196,7 +243,7 @@ h6 {
     border: 3px dotted var(--nesty);
 }
 
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     
     .mainimg {
       flex: 0 0 50%;
@@ -222,4 +269,4 @@ h6 {
       flex: 0 0 100%;
       max-width: 100%;
     }
-  }*/
+}
