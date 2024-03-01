@@ -230,6 +230,12 @@ p {
   );
 }
 
+.porfoliohypers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .thanks {
     display: flex;
     flex-direction: column;
