@@ -48,7 +48,7 @@ nav {
     nav-right: auto;
     position: fixed; 
     top: 0; 
-    width: 100%;
+    width: 90%;
 }
 
 /* Setting spacing rules for header elements */
@@ -70,6 +70,7 @@ a {
     color: var(--nesty)
 }
 
+/* Changes Form Input Colors */
 input {
     background-image: linear-gradient(
     rgba(255, 255, 127, 0.3) 0%,
@@ -78,6 +79,7 @@ input {
     
 }
 
+/* Changes Form Input Colors */
 textarea {
     background-image: linear-gradient(
     rgba(255, 255, 127, 0.3) 0%,
@@ -204,6 +206,7 @@ p {
     box-shadow: 0 0 2rem var(--black);
 }
 
+/* Gives Gradient to Header */
 .projectheader {
     background: -webkit-linear-gradient(#a0a00a, #954f00);
     -webkit-background-clip: text;
