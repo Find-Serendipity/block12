@@ -162,6 +162,9 @@ p {
 
 .main {
     font-size: xx-large;
+    display: block;
+    max-width: 850px;
+    padding: 0 auto;
 }
 
 .maintext {
