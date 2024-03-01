@@ -28,6 +28,7 @@ body {
     background-repeat: repeat;
     background-size: contain;
     list-style-position: inside;
+    margin-top: 5rem;
 }
 
 /* Adding a buffer around the main */
@@ -232,6 +233,7 @@ p {
     justify-content: center;
     text-align: center;
     margin: 0 auto;
+    
 }
 
 .thankyou {
@@ -282,7 +284,7 @@ p {
 
 #selfie {
     border-radius: 500px;
-    border: 3px dotted var(--nesty);
+    border: 2px dotted var(--black);
 }
 
 @media screen and (min-width: 768px) {
