@@ -15,37 +15,3 @@ I created this website to document my progress as I learn to code with HTML and 
 ## Contact
 
 If you would like to contact me about this work, please reach out to find.serendipity@gmail.com
-
-## classes and id
-
-### index
-
-class="nav invisible mainimg text main maintext footer"
-id="birdiehover thump"
-
-### about
-
-class="nav invisible aboutcontainer text maintext paragraph footer"
-
-### contact
-
-class="nav invisible text main footer"
-id="contactform formform firstname lastname email message agreeterms receiveemails sendemail"
-
-### listen
-
-class="nav invisible footer"
-id="musicplayer"
-
-### portfolio
-
-class="nav invisible projectcontainer text projectpad projectimg projectheader list footer"
-
-### terms
-
-class="nav invisible terms termsheader termsbody nav homebutton footer"
-
-### thanks
-
-class="nav invisible thanks thankyou thanksbody nav homebutton footer"
-
