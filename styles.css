@@ -289,22 +289,6 @@ p {
     header {
         width: 60%;
     }
-    .list {
-      flex: 0 0 50%;
-      max-width: 50%;
-    }
-
-    .mainimg {
-        max-width: 50%;
-      }
-
-    .projectimg {
-        max-width: 50%;
-      }
-
-    .img {
-        max-width: 50%;
-    }
   
   }
   
@@ -312,46 +296,3 @@ p {
     header {
         width: 85%;
     }
-    
-    .list {
-        flex: 0 0 33.333%;
-        max-width: 33.333%;
-    }
-
-    .list:last-child {
-        flex-grow: 1;
-    }
-
-    .mainimg {
-        max-width: 33.333%;
-      }
-      
-    .projectimg {
-        max-width: 33.333%;
-      }
-
-    .img {
-        max-width: 33.333%;
-      }
-  }
-
-  @media screen and (min-width: 1320px) {
-    
-    .list {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-
-    .mainimg {
-        max-width: 100%;
-      }
-      
-    .projectimg {
-        max-width: 100%;
-      }
-
-    .img {
-        max-width: 100%;
-      }
-
-}
